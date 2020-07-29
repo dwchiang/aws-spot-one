@@ -57,7 +57,7 @@ You will see the spot instance id after couple minutes.
 Then you can have an ssh connect to the new created spot instance:
 
 ```
-./ec2-init-connect.sh {your_instance_id}
+./ec2-connect.sh {your_instance_id}
 ```
 
 ---
