@@ -2,11 +2,14 @@
 
 Follow Pahud's Youtube video: EP22 - [Building Highly Durable Spot Blocks with no Interruption with AWS CDK(4K 2160P)](https://youtu.be/RgQQO6mMY9E)
 
-## Requirement
+## Requirements
 
+- Installed AWS CLI v2.
+- Installed AWS CDK.
+- `export AWS_DEFAULT_PROFILE=your-profile-name-here`
 - Use default VPC. 
 
-## Preparation
+## Preparations
 
 File: `ec2-init-connect.sh` and `ec2-connect.sh`:
 
@@ -18,7 +21,7 @@ File: `lib\aws-spot-one-stack.ts`
   - Also update `fleet.expireAfter` to your desired duration.
 - Update `defaultInstanceType` to your assigned instance type.
 
-## Execution
+## Executions
 
 Bootstrap once per AWS account per region.
 
