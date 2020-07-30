@@ -1,7 +1,7 @@
 #!/bin/bash
 
 instanceId=$1
-prikey="$HOME/.ssh/id_rsa_github"
+prikey="$HOME/.ssh/id_rsa"
 pubkey="$prikey.pub"
 sshUser='ec2-user'
 
