@@ -50,4 +50,4 @@ destroy:
 
 clean:
 
-	rm cdk.context.json
+	rm -f cdk.context.json

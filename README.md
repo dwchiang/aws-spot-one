@@ -14,6 +14,7 @@ Follow Pahud's Youtube video: EP22 - [Building Highly Durable Spot Blocks with n
 File: `ec2-init-connect.sh` and `ec2-connect.sh`:
 
 - Update your private key file path in `prikey`.
+- If you don't have a key pair, generate one: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`.
 
 File: `lib\aws-spot-one-stack.ts`
 
@@ -23,11 +24,19 @@ File: `lib\aws-spot-one-stack.ts`
 
 ## Executions
 
+Get required packages and compile typescript to js.
+
+```
+npm install
+npm run build
+```
+
+---
+
 Bootstrap once per AWS account per region.
 
 ```
 make bootstrap
-
 ```
 
 ---
