@@ -14,7 +14,7 @@ aws ec2-instance-connect send-ssh-public-key --instance-id ${instanceId} --insta
 
 if [[ $2 != '--send-key-only' ]]; then
   echo "downloading data from ${publicIp} at ${az}"
-  scp -i $prikey ${sshUser}@${publicIp}:firecracker-demo/{data.log,gnuplot.script} .
+  scp -i $prikey ${sshUser}@${publicIp}:firecracker-workshops/02-4000-microVMs/firecracker-demo/{data.log,gnuplot.script} .
 
   gnuplot gnuplot.script
   xdg-open boot-time.png  # on Ubuntu. For other distros just use your default .png viewer.
